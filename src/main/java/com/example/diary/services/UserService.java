@@ -18,4 +18,8 @@ public class UserService {
     }
 
     void create(UserEntity user){ }
+    
+    public boolean joinUser(UserEntity userEntity) {
+        return userMapper.joinUser(userEntity);
+    }
 }

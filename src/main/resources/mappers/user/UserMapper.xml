@@ -16,4 +16,11 @@
         FROM
             tUser
     </select>
+
+    <insert id="joinUser">
+        INSERT INTO tUser
+            (nickname, gender, birth, region, user_id, user_pw, user_email)
+        VALUES
+            (#{nickname}, #{gender}, #{birth}, #{region}, #{userId}, #{userPw}, #{userEmail})
+    </insert>
 </mapper>
