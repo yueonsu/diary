@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/user/join.css">
     <title>Title</title>
 </head>
 <body>
-  <strong>user</strong>
+  <div>
+      <div id="join-title">
+          <div>
+              <h3>회원가입</h3>
+          </div>
+      </div>
+      <form method="post" action="/user/join">
+          <div>
+              <input type="text" name="userId" placeholder="USER ID">
+          </div>
+          <div>
+              <input type="password" name="userPw" placeholder="USER PASSWORD">
+          </div>
+          <div>
+              <input type="text" name="nickname" placeholder="USER NICKNAME">
+          </div>
+          <div>
+              <input type="text" name="gender" placeholder="GENDER">
+          </div>
+          <div>
+              <input type="text" name="birth" placeholder="YYMMDD">
+          </div>
+          <div>
+              <input type="text" name="region" placeholder="REGION">
+          </div>
+          <div>
+              <input type="text" name="userEmail" placeholder="USER EMAIL">
+          </div>
+          <div>
+              <input type="submit" value="회원가입">
+          </div>
+      </form>
+  </div>
 </body>
 </html>

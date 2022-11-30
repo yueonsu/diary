@@ -8,4 +8,5 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
     List<UserEntity> selectUserList();
+    boolean joinUser(UserEntity userEntity);
 }
