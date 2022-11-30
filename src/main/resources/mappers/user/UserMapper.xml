@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.diary.mappers.UserMapper">
+
+    <select id="selectUserList" resultType="UserEntity">
+        SELECT
+            user_pk AS userPk,
+            nickname,
+            gender,
+            birth,
+            region,
+            user_id AS userId,
+            user_pw AS userPw,
+            user_email AS userEmail,
+            reg_date AS regDate
+        FROM
+            tUser
+    </select>
+</mapper>
