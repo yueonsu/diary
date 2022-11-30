@@ -20,4 +20,16 @@ public class UserController {
 
         return "user/join";
     }
+
+    @GetMapping("/profile")
+    public String profile() {
+
+        return "user/profile";
+    }
+
+    @GetMapping("/editProfile")
+    public String editProfile() {
+
+        return "user/editProfile";
+    }
 }

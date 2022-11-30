@@ -16,4 +16,6 @@ public class UserService {
     public List<UserEntity> selectUserList() {
         return userMapper.selectUserList();
     }
+
+    void create(UserEntity user){ }
 }
