@@ -21,25 +21,17 @@ public class UserController {
         return "user/login";
     }
 
-    @PostMapping("/login")
-    public String loginProc(UserEntity userEntity) {
-
-        return "user/login";
-    }
-
-
     @GetMapping("/join")
     public String join() {
 
-        System.out.println(userService.selectUserList());
 
         return "user/join";
     }
 
     @PostMapping("/join")
     public String joinProc(UserEntity userEntity) {
-        userService.joinUser(userEntity);
-        System.out.println(userEntity);
+        System.out.println(userService.joinUser(userEntity));
+
         return "redirect:/user/login";
     }
 }

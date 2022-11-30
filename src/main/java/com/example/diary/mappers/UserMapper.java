@@ -9,4 +9,5 @@ import java.util.List;
 public interface UserMapper {
     List<UserEntity> selectUserList();
     boolean joinUser(UserEntity userEntity);
+    UserEntity loginUser(UserEntity entity);
 }
