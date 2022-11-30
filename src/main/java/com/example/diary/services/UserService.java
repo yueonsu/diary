@@ -16,4 +16,8 @@ public class UserService {
     public List<UserEntity> selectUserList() {
         return userMapper.selectUserList();
     }
+
+    public boolean joinUser(UserEntity userEntity) {
+        return userMapper.joinUser(userEntity);
+    }
 }
