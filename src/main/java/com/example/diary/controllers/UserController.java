@@ -35,7 +35,7 @@ public class UserController {
 
         return "user/join";
     }
-    
+
     @PostMapping("/join")
     public String joinProc(UserEntity userEntity) {
         userService.joinUser(userEntity);
@@ -54,4 +54,5 @@ public class UserController {
     public String editProfile() {
 
         return "user/editProfile";
+    }
 }
