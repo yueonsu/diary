@@ -35,11 +35,23 @@ public class UserController {
 
         return "user/join";
     }
-
+    
     @PostMapping("/join")
     public String joinProc(UserEntity userEntity) {
         userService.joinUser(userEntity);
         System.out.println(userEntity);
         return "redirect:/user/login";
     }
+
+
+    @GetMapping("/profile")
+    public String profile() {
+
+        return "user/profile";
+    }
+
+    @GetMapping("/editProfile")
+    public String editProfile() {
+
+        return "user/editProfile";
 }
