@@ -12,4 +12,5 @@ public interface UserMapper {
     void create(UserEntity user);
 
     boolean joinUser(UserEntity userEntity);
+    UserEntity loginUser(UserEntity entity);
 }

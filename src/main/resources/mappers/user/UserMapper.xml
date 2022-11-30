@@ -23,4 +23,21 @@
         VALUES
             (#{nickname}, #{gender}, #{birth}, #{region}, #{userId}, #{userPw}, #{userEmail})
     </insert>
+
+    <select id="loginUser" resultType="UserEntity">
+        SELECT
+            user_pk AS userPk,
+            nickname,
+            gender,
+            birth,
+            region,
+            user_id AS userId,
+            user_pw AS userPw,
+            user_email AS userEmail,
+            reg_date AS regDate
+        FROM
+            tUser
+        WHERE
+            user_id = #{userId}
+    </select>
 </mapper>
